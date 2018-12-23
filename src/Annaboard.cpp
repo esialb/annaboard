@@ -33,6 +33,7 @@ void Annaboard::Setup() {
 	}
 
 	gfx_->begin(SSD1306_SWITCHCAPVCC, 0x3C);
+	gfx_->setRotation(2);
 	gfx_->clearDisplay();
 	gfx_->setTextColor(WHITE, BLACK);
 	gfx_->setCursor(0, 56);
